@@ -1,0 +1,1875 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='drug_microbiota_interactions_cleaned' inline='true' name='federated.1s1ijgd0rmza8x13ofas60b7az83' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='drug_microbiota_interactions_cleaned' name='textscan.0jfpmrt02ckbll140uowd066w5vf'>
+            <connection class='textscan' directory='C:/Users/DELL/Desktop/MS Data Science/Info Vis/Projects/Tableu' filename='drug_microbiota_interactions_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jfpmrt02ckbll140uowd066w5vf' name='drug_microbiota_interactions_cleaned.csv' table='[drug_microbiota_interactions_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='drug_name' ordinal='0' />
+            <column datatype='string' name='drug_class' ordinal='1' />
+            <column datatype='string' name='bacteria_species' ordinal='2' />
+            <column datatype='string' name='enzyme' ordinal='3' />
+            <column datatype='string' name='metabolism_pathway' ordinal='4' />
+            <column datatype='real' name='solubility_ph' ordinal='5' />
+            <column datatype='real' name='bioavailability' ordinal='6' />
+            <column datatype='real' name='half_life_hrs' ordinal='7' />
+            <column datatype='real' name='plasma_protein_binding' ordinal='8' />
+            <column datatype='string' name='excretion' ordinal='9' />
+            <column datatype='real' name='depletion_probability' ordinal='10' />
+            <column datatype='integer' name='altered_efficacy' ordinal='11' />
+            <column datatype='real' name='stability_score' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drug_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[drug_name]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>drug_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drug_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[drug_class]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>drug_class</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bacteria_species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bacteria_species]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>bacteria_species</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>enzyme</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[enzyme]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>enzyme</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metabolism_pathway</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[metabolism_pathway]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>metabolism_pathway</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>solubility_ph</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[solubility_ph]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>solubility_ph</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bioavailability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bioavailability]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>bioavailability</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>half_life_hrs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[half_life_hrs]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>half_life_hrs</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plasma_protein_binding</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[plasma_protein_binding]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>plasma_protein_binding</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>excretion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[excretion]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>excretion</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depletion_probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depletion_probability]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>depletion_probability</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>altered_efficacy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[altered_efficacy]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>altered_efficacy</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stability_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stability_score]</local-name>
+            <parent-name>[drug_microbiota_interactions_cleaned.csv]</parent-name>
+            <remote-alias>stability_score</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Solubility Ph (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[solubility_ph]' peg='0' size='0.442' />
+      </column>
+      <column caption='drug_microbiota_interactions_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]' role='measure' type='quantitative' />
+      <column caption='Altered Efficacy' datatype='integer' name='[altered_efficacy]' role='measure' type='quantitative' />
+      <column caption='Bacteria Species' datatype='string' name='[bacteria_species]' role='dimension' type='nominal' />
+      <column caption='Bioavailability' datatype='real' name='[bioavailability]' role='measure' type='quantitative' />
+      <column caption='Depletion Probability' datatype='real' name='[depletion_probability]' role='measure' type='quantitative' />
+      <column caption='Drug Class' datatype='string' name='[drug_class]' role='dimension' type='nominal' />
+      <column caption='Drug Name' datatype='string' name='[drug_name]' role='dimension' type='nominal' />
+      <column caption='Enzyme' datatype='string' name='[enzyme]' role='dimension' type='nominal' />
+      <column caption='Excretion' datatype='string' name='[excretion]' role='dimension' type='nominal' />
+      <column caption='Half Life Hrs' datatype='real' name='[half_life_hrs]' role='measure' type='quantitative' />
+      <column caption='Metabolism Pathway' datatype='string' name='[metabolism_pathway]' role='dimension' type='nominal' />
+      <column caption='Plasma Protein Binding' datatype='real' name='[plasma_protein_binding]' role='measure' type='quantitative' />
+      <column caption='Solubility Ph' datatype='real' name='[solubility_ph]' role='measure' type='quantitative' />
+      <column caption='Stability Score' datatype='real' name='[stability_score]' role='measure' type='quantitative' />
+      <column-instance column='[bioavailability]' derivation='Sum' name='[sum:bioavailability:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[half_life_hrs]' derivation='Sum' name='[sum:half_life_hrs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[plasma_protein_binding]' derivation='Sum' name='[sum:plasma_protein_binding:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[solubility_ph]' derivation='Sum' name='[sum:solubility_ph:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stability_score]' derivation='Sum' name='[sum:stability_score:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_0jor2t01fp8ahb1f9o6hr0p8hoqo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2025 07:46:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>drug_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[drug_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drug_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>drug_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[drug_class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drug_class</remote-alias>
+              <ordinal>1</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bacteria_species</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bacteria_species]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bacteria_species</remote-alias>
+              <ordinal>2</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enzyme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[enzyme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>enzyme</remote-alias>
+              <ordinal>3</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>metabolism_pathway</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[metabolism_pathway]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metabolism_pathway</remote-alias>
+              <ordinal>4</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>solubility_ph</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[solubility_ph]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>solubility_ph</remote-alias>
+              <ordinal>5</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bioavailability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bioavailability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bioavailability</remote-alias>
+              <ordinal>6</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>half_life_hrs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[half_life_hrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>half_life_hrs</remote-alias>
+              <ordinal>7</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>306</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>plasma_protein_binding</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[plasma_protein_binding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>plasma_protein_binding</remote-alias>
+              <ordinal>8</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>excretion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[excretion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>excretion</remote-alias>
+              <ordinal>9</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>depletion_probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[depletion_probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>depletion_probability</remote-alias>
+              <ordinal>10</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>altered_efficacy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[altered_efficacy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>altered_efficacy</remote-alias>
+              <ordinal>11</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stability_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stability_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stability_score</remote-alias>
+              <ordinal>12</ordinal>
+              <family>drug_microbiota_interactions_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:solubility_ph:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:plasma_protein_binding:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:half_life_hrs:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Zimbabwe&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{2d0f797a-7191-45e2-b2ce-f99aa7116426}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:bioavailability:qk]' />
+            <field name='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:half_life_hrs:qk]' />
+            <field name='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='drug_microbiota_interactions_cleaned.csv' id='drug_microbiota_interactions_cleaned.csv_FFA5F9E283D94EC7AC57A3099326BC83'>
+            <properties context=''>
+              <relation connection='textscan.0jfpmrt02ckbll140uowd066w5vf' name='drug_microbiota_interactions_cleaned.csv' table='[drug_microbiota_interactions_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='drug_name' ordinal='0' />
+                  <column datatype='string' name='drug_class' ordinal='1' />
+                  <column datatype='string' name='bacteria_species' ordinal='2' />
+                  <column datatype='string' name='enzyme' ordinal='3' />
+                  <column datatype='string' name='metabolism_pathway' ordinal='4' />
+                  <column datatype='real' name='solubility_ph' ordinal='5' />
+                  <column datatype='real' name='bioavailability' ordinal='6' />
+                  <column datatype='real' name='half_life_hrs' ordinal='7' />
+                  <column datatype='real' name='plasma_protein_binding' ordinal='8' />
+                  <column datatype='string' name='excretion' ordinal='9' />
+                  <column datatype='real' name='depletion_probability' ordinal='10' />
+                  <column datatype='integer' name='altered_efficacy' ordinal='11' />
+                  <column datatype='real' name='stability_score' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bioavailability Vs Half Life'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bioavailability Vs Half Life hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drug_microbiota_interactions_cleaned' name='federated.1s1ijgd0rmza8x13ofas60b7az83' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s1ijgd0rmza8x13ofas60b7az83'>
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{2d0f797a-7191-45e2-b2ce-f99aa7116426}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column caption='Bioavailability' datatype='real' name='[bioavailability]' role='measure' type='quantitative' />
+            <column caption='Drug Class' datatype='string' name='[drug_class]' role='dimension' type='nominal' />
+            <column caption='Drug Name' datatype='string' name='[drug_name]' role='dimension' type='nominal' />
+            <column caption='Half Life Hrs' datatype='real' name='[half_life_hrs]' role='measure' type='quantitative' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[drug_class]' derivation='None' name='[none:drug_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[drug_name]' derivation='None' name='[none:drug_name:nk]' pivot='key' type='nominal' />
+            <column caption='Stability Score' datatype='real' name='[stability_score]' role='measure' type='quantitative' />
+            <column-instance column='[bioavailability]' derivation='Sum' name='[sum:bioavailability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[half_life_hrs]' derivation='Sum' name='[sum:half_life_hrs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stability_score]' derivation='Sum' name='[sum:stability_score:qk]' pivot='key' type='quantitative' />
+            <style />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' />
+              <lod column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_name:nk]' />
+              <lod column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' />
+              <color column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:AdhocCluster:1:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:bioavailability:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:bioavailability:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:half_life_hrs:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:half_life_hrs:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:bioavailability:qk]</rows>
+        <cols>[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:half_life_hrs:qk]</cols>
+      </table>
+      <simple-id uuid='{FEB06D5B-937E-4D81-81EF-3FB4A30E4512}' />
+    </worksheet>
+    <worksheet name='Boavailability Vs Drug class'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bioavailability Vs Drug class</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drug_microbiota_interactions_cleaned' name='federated.1s1ijgd0rmza8x13ofas60b7az83' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s1ijgd0rmza8x13ofas60b7az83'>
+            <column-instance column='[bioavailability]' derivation='Avg' name='[avg:bioavailability:qk]' pivot='key' type='quantitative' />
+            <column caption='Bioavailability' datatype='real' name='[bioavailability]' role='measure' type='quantitative' />
+            <column caption='Drug Class' datatype='string' name='[drug_class]' role='dimension' type='nominal' />
+            <column caption='Drug Name' datatype='string' name='[drug_name]' role='dimension' type='nominal' />
+            <column-instance column='[drug_class]' derivation='None' name='[none:drug_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[drug_name]' derivation='None' name='[none:drug_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1s1ijgd0rmza8x13ofas60b7az83].[avg:bioavailability:qk]</rows>
+        <cols>[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_name:nk]</cols>
+      </table>
+      <simple-id uuid='{57F02CAA-D8BE-42D4-95A9-C720F3814D48}' />
+    </worksheet>
+    <worksheet name='Drug class Vs Stability of enzymes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Drug class Vs Stability of enzymes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drug_microbiota_interactions_cleaned' name='federated.1s1ijgd0rmza8x13ofas60b7az83' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s1ijgd0rmza8x13ofas60b7az83'>
+            <column-instance column='[drug_name]' derivation='Count' name='[cnt:drug_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Drug Class' datatype='string' name='[drug_class]' role='dimension' type='nominal' />
+            <column caption='Drug Name' datatype='string' name='[drug_name]' role='dimension' type='nominal' />
+            <column caption='Enzyme' datatype='string' name='[enzyme]' role='dimension' type='nominal' />
+            <column-instance column='[drug_class]' derivation='None' name='[none:drug_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[enzyme]' derivation='None' name='[none:enzyme:nk]' pivot='key' type='nominal' />
+            <column caption='Stability Score' datatype='real' name='[stability_score]' role='measure' type='quantitative' />
+            <column-instance column='[stability_score]' derivation='Sum' name='[sum:stability_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='450' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' />
+              <size column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[cnt:drug_name:qk]' />
+              <text column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:enzyme:nk]' />
+              <lod column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' />
+              <lod column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:enzyme:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3D981066-A5B9-4B2C-B0C0-4379A25FD9D7}' />
+    </worksheet>
+    <worksheet name='Microbiota Interactions per DRUG'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>DRUGS Vs Microbiota Interactions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='drug_microbiota_interactions_cleaned' name='federated.1s1ijgd0rmza8x13ofas60b7az83' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s1ijgd0rmza8x13ofas60b7az83'>
+            <column caption='Bacteria Species' datatype='string' name='[bacteria_species]' role='dimension' type='nominal' />
+            <column-instance column='[bacteria_species]' derivation='Count' name='[cnt:bacteria_species:qk]' pivot='key' type='quantitative' />
+            <column caption='Drug Name' datatype='string' name='[drug_name]' role='dimension' type='nominal' />
+            <column-instance column='[bacteria_species]' derivation='None' name='[none:bacteria_species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[drug_name]' derivation='None' name='[none:drug_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1s1ijgd0rmza8x13ofas60b7az83].[cnt:bacteria_species:qk]</rows>
+        <cols>([federated.1s1ijgd0rmza8x13ofas60b7az83].[none:bacteria_species:nk] / [federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_name:nk])</cols>
+      </table>
+      <simple-id uuid='{38615BA9-0904-4E2C-913C-E9E5784323D6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='8' param='horz' type-v2='layout-flow' w='97538' x='1231' y='930'>
+            <zone h='98140' id='6' type-v2='layout-basic' w='72923' x='1231' y='930'>
+              <zone h='49070' id='3' name='Microbiota Interactions per DRUG' w='36461' x='1231' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49070' id='5' name='Boavailability Vs Drug class' w='36462' x='37692' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49070' id='10' name='Bioavailability Vs Half Life' w='36461' x='1231' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49070' id='13' name='Drug class Vs Stability of enzymes' w='36462' x='37692' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98140' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='930'>
+              <zone h='14651' id='9' name='Boavailability Vs Drug class' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' type-v2='color' w='24615' x='74154' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14651' id='11' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='size' w='24615' x='74154' y='15581'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10000' id='12' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:AdhocCluster:1:ok]' type-v2='color' w='24615' x='74154' y='30232'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7558' id='14' name='Drug class Vs Stability of enzymes' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='color' w='24615' x='74154' y='40232'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>Æ               </run>
+                <run bold='true' underline='true'>DRUG MICROBIOTA</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size sizing-mode='automatic' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='18' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone fixed-size='77' h='7871' id='19' is-fixed='true' type-v2='title' w='99166' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='90647' id='8' param='horz' type-v2='layout-flow' w='99166' x='417' y='8612'>
+                  <zone h='90647' id='6' type-v2='layout-basic' w='90833' x='417' y='8612'>
+                    <zone h='42339' id='3' name='Microbiota Interactions per DRUG' w='43489' x='417' y='8612'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='42339' id='5' name='Boavailability Vs Drug class' w='47344' x='43906' y='8612'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='48308' id='10' name='Bioavailability Vs Half Life' w='43489' x='417' y='50951'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='48308' id='13' name='Drug class Vs Stability of enzymes' w='47344' x='43906' y='50951'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='160' h='90647' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='8333' x='91250' y='8612'>
+                    <zone h='11667' id='9' name='Boavailability Vs Drug class' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' type-v2='color' w='8333' x='91250' y='8612'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='11667' id='11' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='size' w='8333' x='91250' y='20279'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='7963' id='12' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:AdhocCluster:1:ok]' type-v2='color' w='8333' x='91250' y='31946'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='6019' id='14' name='Drug class Vs Stability of enzymes' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='color' w='8333' x='91250' y='39909'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='20' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='49070' id='3' is-fixed='true' name='Microbiota Interactions per DRUG' w='36461' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49070' id='5' is-fixed='true' name='Boavailability Vs Drug class' w='36462' x='37692' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14651' id='9' name='Boavailability Vs Drug class' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' type-v2='color' w='24615' x='74154' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49070' id='10' is-fixed='true' name='Bioavailability Vs Half Life' w='36461' x='1231' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14651' id='11' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='size' w='24615' x='74154' y='15581'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10000' id='12' name='Bioavailability Vs Half Life' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:AdhocCluster:1:ok]' type-v2='color' w='24615' x='74154' y='30232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49070' id='13' is-fixed='true' name='Drug class Vs Stability of enzymes' w='36462' x='37692' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7558' id='14' name='Drug class Vs Stability of enzymes' pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type-v2='color' w='24615' x='74154' y='40232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E708B348-09CE-4E92-8A08-86D895C190E1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Microbiota Interactions per DRUG'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D321DC88-2EAE-480E-B14A-92585E7E50AD}' />
+    </window>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Bioavailability Vs Half Life'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boavailability Vs Drug class'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Drug class Vs Stability of enzymes' />
+        <viewpoint name='Microbiota Interactions per DRUG' />
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{4EF3A7A9-D682-40F2-A625-8A39D1FC3FA0}' />
+    </window>
+    <window class='worksheet' name='Boavailability Vs Drug class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:drug_class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F5DD4517-19CF-42F0-B818-66436C5D6171}' />
+    </window>
+    <window class='worksheet' name='Bioavailability Vs Half Life'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[none:AdhocCluster:1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CFC4EB6E-2435-413D-9049-CC078255D7BE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Drug class Vs Stability of enzymes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1s1ijgd0rmza8x13ofas60b7az83].[sum:stability_score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9401949D-3125-4346-8797-AF75617EB85F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Bioavailability Vs Half Life' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Boavailability Vs Drug class' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+      d+fYAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Drug class Vs Stability of enzymes' width='192'>
+      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
+      /x9cQUQEAMO6AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Microbiota Interactions per DRUG' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
